@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Герои страны</title>
+    <meta name="keywords" content="Герои, Россия">
+    <style>
+      body {
+        background: gray;
+        text-align: center; 
+      }
+    </style>
+    <script>
+      function getRandomInd(max) {
+        return Math.floor(Math.random() * max); 
+      }
+      
+      function getUrl() {
+        console.log("getUrl");
+        let num = getRandomInt(32453);
+        let part = "https://warheroes.ru/hero/hero.asp?Hero_id="
+        let url = part + num;
+        console.log("url = " + url);
+        return url;
+      }
+    </script>
+  </head>
+  <body>
+    <a href="getUrl();">Герои страны</a>
+  </body>
+  <script>
+    
+  </script>
+</html>
